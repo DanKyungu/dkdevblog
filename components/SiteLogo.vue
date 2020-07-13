@@ -24,7 +24,7 @@ export default {
   name: 'SiteLogo',
   data() {
     return {
-      frames: 5,
+      frames: 1,
       currentFrame: 1,
       blinking: true
     }
@@ -40,7 +40,7 @@ export default {
 <style lang="scss">
 @keyframes logoBlink {
   100% {
-    transform: translateY(-360px);
+    transform: translateY(0px);
   }
 }
 .logo-wrapper {
@@ -54,7 +54,10 @@ export default {
     img {
       display: block;
       height: 40px;
-      margin: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-right: 5px;
+      margin-left: 0px;
       max-height: initial;
     }
     &.blink {
